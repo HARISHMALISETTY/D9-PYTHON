@@ -259,8 +259,10 @@ CCC
 DDDD
 EEEEE
 
-ip=['hii','hello','some','python','java']
+ip=['Hii','Hello','some','python','Java']
 
-op=['iih','olleh','emos','nohtyp','avaj']
+op=['iih','olleh','SOME','PYTHON','avaj']
+
+without using predefined methods
 """
 
