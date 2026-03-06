@@ -246,11 +246,11 @@ ABC
 ABCD
 ABCDE
 """
-alphabet=64
-for y in range(1,6):
-    for x in range(1,y+1):
-        print(chr(x+alphabet),end='')
-    print()
+# alphabet=64
+# for y in range(1,6):
+#     for x in range(1,y+1):
+#         print(chr(x+alphabet),end='')
+#     print()
 
 """
 A
@@ -266,3 +266,71 @@ op=['iih','olleh','SOME','PYTHON','avaj']
 without using predefined methods
 """
 
+# 1.capitalize--->rev and lowercase 
+# 2.lowercase--->uppercase
+# ip=['Hii','Hello','some','python','Java']
+# op=[]
+# for char in ip:    
+#     rev=''
+#     if char[0]==char[0].upper():
+#         for x in range(len(char)-1,-1,-1):            
+#             rev+=char[x]        
+#         op.append(rev.lower())
+#     else:       
+#         op.append(char.upper())
+# print(op)
+
+# ip=['some','happy','olive','theatre','show','zomato']
+# op=['SOME','yppah','evilo','ertaeht','SHOW','ZOMATO']
+
+# 4,5,5,7,4,6
+
+str1=input('enter string 1 : ')
+str2=input('enter string 2 : ')
+count=0
+
+# str1--->s 
+
+# s covered 
+# i covered 
+# l covered 
+# e covered
+
+
+
+# if len(str1)!=len(str2):
+#     print('Not anagram')
+# else:
+#     for i in range(len(str1)):
+#         for j in range(len(str2)):
+#             if str1[i]==str2[j]:
+#                 str2=str2.replace(str2[j],'*')                
+#                 count+=1 
+#                 break   
+#     if count==len(str2):
+#         print('ANAGRAM')
+#     else:
+#         print('NOT ANAGRAM')
+
+# s-->c=1 
+# i-->c=2
+# l--->c=3
+# e-->c=3
+# n-->c=4
+# t-->c=6
+# str1='happy'
+# str2='hello'
+# banana=b a n
+
+# "abcd"--->print all the substrings of given string 
+# a 
+# ab 
+# abc 
+# abcd 
+# b 
+# bc 
+# bcd 
+# c 
+# cd 
+# d 
+#count number of substrings can be done for given string
