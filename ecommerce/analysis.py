@@ -1,5 +1,4 @@
-def total_revenue(data):
-   
+def total_revenue(data):   
     total_revenue=0
     for order in data:
         if order["status"]=='Delivered':
@@ -22,7 +21,27 @@ def most_sold_product(data):
 
 def top_customer(data):
     print('top customer')
+    customers={}
+    for order in data:
+        if order['status']=='Delivered':
+            if order['customer'] in customers:
+                customers[order['customer']]+=order['price']*order['quantity']
+            else:
+                customers[order['customer']]=order['price']*order['quantity']
+    # print(customers)
+    top_custmr=max(customers,key=customers.get)
+    print(top_custmr)
+
 def Cancelled_orders(data):
     print('cancelled orders')
+    cancelled_orders=[]
+    for order in data:
+        if order['status']=='Cancelled':
+            cancelled_orders.append(order)
+    print(cancelled_orders)
+
 def product_revenue(data):
     print('product revenue')
+
+
+
